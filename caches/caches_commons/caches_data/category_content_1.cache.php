@@ -1,5 +1,38 @@
 <?php
 return array (
+  9 => 
+  array (
+    'catid' => '9',
+    'siteid' => '1',
+    'type' => '2',
+    'modelid' => '0',
+    'parentid' => '0',
+    'arrparentid' => '',
+    'child' => '0',
+    'arrchildid' => '',
+    'catname' => '在线报名',
+    'style' => '',
+    'image' => '',
+    'description' => '',
+    'parentdir' => '',
+    'catdir' => '',
+    'url' => 'http://localhost:8000/index.php?m=course&c=index',
+    'items' => '0',
+    'hits' => '0',
+    'setting' => '{"show_ruleid":"","repeatchargedays":"1"}',
+    'listorder' => '0',
+    'ismenu' => '1',
+    'sethtml' => '0',
+    'letter' => '',
+    'usable_type' => '',
+    'create_to_html_root' => NULL,
+    'ishtml' => NULL,
+    'content_ishtml' => NULL,
+    'category_ruleid' => NULL,
+    'show_ruleid' => '',
+    'workflowid' => NULL,
+    'isdomain' => '0',
+  ),
   1 => 
   array (
     'catid' => '1',
@@ -16,7 +49,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'about',
-    'url' => 'http://test.szwtdl.top/html/about/',
+    'url' => 'http://localhost:8000/html/about/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -59,7 +92,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'aboutus',
-    'url' => 'http://test.szwtdl.top/html/about/aboutus/',
+    'url' => 'http://localhost:8000/html/about/aboutus/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -102,7 +135,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'guonei',
-    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=6',
+    'url' => 'http://localhost:8000/index.php?m=content&c=index&a=lists&catid=6',
     'items' => '4',
     'hits' => '0',
     'setting' => 'array (
@@ -153,7 +186,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'contactus',
-    'url' => 'http://test.szwtdl.top/html/about/contactus/',
+    'url' => 'http://localhost:8000/html/about/contactus/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -196,7 +229,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'down',
-    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=7',
+    'url' => 'http://localhost:8000/index.php?m=content&c=index&a=lists&catid=7',
     'items' => '1',
     'hits' => '0',
     'setting' => 'array (
@@ -247,7 +280,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'copyright',
-    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=4',
+    'url' => 'http://localhost:8000/index.php?m=content&c=index&a=lists&catid=4',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -290,7 +323,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'pps',
-    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=8',
+    'url' => 'http://localhost:8000/index.php?m=content&c=index&a=lists&catid=8',
     'items' => '2',
     'hits' => '0',
     'setting' => 'array (
@@ -341,7 +374,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'hr',
-    'url' => 'http://test.szwtdl.top/html/about/hr/',
+    'url' => 'http://localhost:8000/html/about/hr/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (

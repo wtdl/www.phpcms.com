@@ -1,17 +1,16 @@
 DROP TABLE IF EXISTS `phpcms_course`;
 CREATE TABLE IF NOT EXISTS `phpcms_course` (
-  `id` smallint(4) unsigned NOT NULL AUTO_INCREMENT,
-  `siteid` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `title` char(80) NOT NULL,
-  `content` text NOT NULL,
-  `starttime` date NOT NULL DEFAULT '0000-00-00',
-  `endtime` date NOT NULL DEFAULT '0000-00-00',
-  `username` varchar(40) NOT NULL,
-  `addtime` int(10) unsigned NOT NULL DEFAULT '0',
-  `hits` smallint(5) unsigned NOT NULL DEFAULT '0',
-  `passed` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  `style` char(15) NOT NULL ,
-  `show_template` char(30) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `siteid` (`siteid`,`passed`,`endtime`)
+  `id` smallint(4) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nickname` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '姓名',
+  `sex` tinyint(2) NULL DEFAULT NULL,
+  `school` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `school_number` int(11) NULL DEFAULT NULL,
+  `card` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `phone` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `parents_phone` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `addtime` int(10) UNSIGNED NOT NULL DEFAULT 0,
+  `show_template` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `is_deny` tinyint(2) NULL DEFAULT NULL COMMENT '状态0正常，1关闭',
+  `updatetime` int(10) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
 ) TYPE=MyISAM ;

@@ -42,7 +42,8 @@ class index extends foreground {
 		//加载用户模块配置
 		$member_setting = getcache('member_setting');
 		if(!$member_setting['allowregister']) {
-			showmessage(L('deny_register'), 'index.php?m=member&c=index&a=login');
+			showmessage(L('deny_register'), 'index.php?m=member&c=
+			&a=login');
 		}
 		//加载短信模块配置
  		$sms_setting_arr = getcache('sms','sms');

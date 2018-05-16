@@ -173,3 +173,16 @@
 <?php exit;?>05-16 17:53:42 | 2 | file_get_contents(http://sms.phpip.com/api.php?op=smsnotice&amp;url=www.phpcms.my&amp;type=): failed to open stream: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution | phpcms/libs/functions/global.func.php | 1751
 <?php exit;?>05-16 17:53:42 | 2 | file_get_contents(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution | phpcms/libs/functions/global.func.php | 1751
 <?php exit;?>05-16 17:53:42 | 2 | file_get_contents(http://sms.phpcms.cn/api.php?op=smsnotice&amp;url=www.phpcms.my&amp;type=): failed to open stream: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution | phpcms/libs/functions/global.func.php | 1751
+<?php exit;?>05-16 20:11:03 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 20:11:03 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 20:48:13 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 20:48:13 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 20:48:13 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 20:48:13 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 20:48:13 | 2 | Invalid argument supplied for foreach() | phpcms/modules/video/player.php | 54
+<?php exit;?>05-16 21:29:36 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 21:29:36 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 21:41:19 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 21:41:19 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 21:41:49 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-16 21:41:49 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
