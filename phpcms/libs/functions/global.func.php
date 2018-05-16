@@ -8,6 +8,16 @@
  */
 
 /**
+ * 打印数组
+ * @param $arr
+ */
+function __print($arr){
+    echo "<pre>";
+    print_r($arr);
+    exit();
+}
+
+/**
  * 返回经addslashes处理过的字符串或数组
  * @param $string 需要处理的字符串或数组
  * @return mixed

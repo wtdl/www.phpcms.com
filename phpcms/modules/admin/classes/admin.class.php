@@ -17,8 +17,8 @@ class admin {
 		self::check_admin();
 		self::check_priv();
 		pc_base::load_app_func('global','admin');
-		if (!module_exists(ROUTE_M)) showmessage(L('module_not_exists'));
-		self::manage_log();
+        if (!module_exists(ROUTE_M)) showmessage(L('module_not_exists'));
+        self::manage_log();
 		self::check_ip();
 		self::lock_screen();
 		self::check_hash();

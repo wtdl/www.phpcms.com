@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="https://www.wuzhicms.com/res/css/ie7/ie7.css">
     <!<![endif]-->
 </head>
-<body class="login-body">
+<body class="login-body" onload="javascript:document.myform.username.focus();">
 <div class="container fadeInDown">
     <form class="form-signin" id="form_login" action="index.php?m=admin&c=index&a=login&dosubmit=1" method="post" onsubmit="return checkform();">
         <div class="form-signin-heading"></div>

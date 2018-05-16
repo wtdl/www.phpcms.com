@@ -9,14 +9,14 @@ return array (
     'parentid' => '0',
     'arrparentid' => '0',
     'child' => '1',
-    'arrchildid' => '1,2,3,5,162',
+    'arrchildid' => '1,2,3,4,5',
     'catname' => '网站介绍',
     'style' => '',
     'image' => '',
     'description' => '',
     'parentdir' => '',
     'catdir' => 'about',
-    'url' => 'http://localhost:8000/html/about/',
+    'url' => 'http://test.szwtdl.top/html/about/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -59,7 +59,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'aboutus',
-    'url' => 'http://localhost:8000/html/about/aboutus/',
+    'url' => 'http://test.szwtdl.top/html/about/aboutus/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -102,7 +102,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'guonei',
-    'url' => 'http://localhost:8000',
+    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=6',
     'items' => '4',
     'hits' => '0',
     'setting' => 'array (
@@ -153,7 +153,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'contactus',
-    'url' => 'http://localhost:8000/html/about/contactus/',
+    'url' => 'http://test.szwtdl.top/html/about/contactus/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -196,7 +196,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'down',
-    'url' => 'http://localhost:8000',
+    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=7',
     'items' => '1',
     'hits' => '0',
     'setting' => 'array (
@@ -247,7 +247,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'copyright',
-    'url' => 'http://test.phpcms.cn/index.php?m=content&c=index&a=lists&catid=4',
+    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=4',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
@@ -290,7 +290,7 @@ return array (
     'description' => '',
     'parentdir' => '',
     'catdir' => 'pps',
-    'url' => 'http://localhost:8000',
+    'url' => 'http://test.szwtdl.top/index.php?m=content&c=index&a=lists&catid=8',
     'items' => '2',
     'hits' => '0',
     'setting' => 'array (
@@ -341,7 +341,7 @@ return array (
     'description' => '',
     'parentdir' => 'about/',
     'catdir' => 'hr',
-    'url' => 'http://localhost:8000/html/about/hr/',
+    'url' => 'http://test.szwtdl.top/html/about/hr/',
     'items' => '0',
     'hits' => '0',
     'setting' => 'array (
