@@ -173,3 +173,96 @@
 <?php exit;?>05-16 17:53:42 | 2 | file_get_contents(http://sms.phpip.com/api.php?op=smsnotice&amp;url=www.phpcms.my&amp;type=): failed to open stream: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution | phpcms/libs/functions/global.func.php | 1751
 <?php exit;?>05-16 17:53:42 | 2 | file_get_contents(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution | phpcms/libs/functions/global.func.php | 1751
 <?php exit;?>05-16 17:53:42 | 2 | file_get_contents(http://sms.phpcms.cn/api.php?op=smsnotice&amp;url=www.phpcms.my&amp;type=): failed to open stream: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution | phpcms/libs/functions/global.func.php | 1751
+<?php exit;?>05-17 08:58:46 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/modules.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 08:58:47 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/sitelist.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 08:58:48 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 08:58:48 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content_1.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 08:58:53 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 08:58:53 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 08:58:53 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 08:58:53 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 08:58:57 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 08:58:57 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 08:58:57 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 08:58:57 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 08:59:01 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/common.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 08:59:02 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 08:59:02 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 08:59:02 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 08:59:02 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 08:59:05 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 08:59:05 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:02:14 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/modules.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:02:15 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/sitelist.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:02:16 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:02:16 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content_1.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:02:22 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:02:22 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:02:22 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:02:22 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:02:25 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:02:25 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:02:25 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:02:25 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:02:30 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/common.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:02:32 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:02:32 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:02:32 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:02:32 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:02:35 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:02:35 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:03:42 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:03:42 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content_1.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:03:43 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:03:43 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content_1.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:03:53 | 2 | chmod(): Operation not permitted | phpcms/modules/content/classes/html.class.php | 364
+<?php exit;?>05-17 09:04:23 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/modules.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:04:23 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/sitelist.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:04:24 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:04:24 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/category_content_1.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:04:30 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:04:30 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:04:30 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:04:30 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:04:34 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:04:34 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:04:34 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:04:34 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:04:38 | 2 | file_put_contents(/code/www.phpcms.com/caches/caches_commons/caches_data/common.cache.php): failed to open stream: Permission denied | phpcms/libs/classes/cache_file.class.php | 60
+<?php exit;?>05-17 09:04:39 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:04:39 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:04:39 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:04:39 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:04:43 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:04:43 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:06:14 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:06:14 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:06:14 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:06:14 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:06:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:06:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:06:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:06:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:06:25 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:06:25 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:06:25 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:06:25 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:06:29 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:06:29 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:08:32 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:08:32 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:08:32 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:08:32 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-17 09:08:37 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:08:37 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:08:37 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:08:37 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-17 09:08:42 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:08:42 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:08:42 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:08:42 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-17 09:08:46 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:08:46 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:08:57 | 2 | chmod(): Operation not permitted | phpcms/modules/content/classes/html.class.php | 364
+<?php exit;?>05-17 09:09:15 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-17 09:09:15 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84

@@ -1,5 +1,38 @@
 <?php
 return array (
+  9 => 
+  array (
+    'catid' => '9',
+    'siteid' => '1',
+    'type' => '2',
+    'modelid' => '0',
+    'parentid' => '0',
+    'arrparentid' => '',
+    'child' => '0',
+    'arrchildid' => '',
+    'catname' => '报名',
+    'style' => '',
+    'image' => '',
+    'description' => '',
+    'parentdir' => '',
+    'catdir' => '',
+    'url' => 'http://test.szwtdl.top/index.php?m=course&c=index&a=init',
+    'items' => '0',
+    'hits' => '0',
+    'setting' => '{"show_ruleid":"","repeatchargedays":"1"}',
+    'listorder' => '0',
+    'ismenu' => '1',
+    'sethtml' => '0',
+    'letter' => '',
+    'usable_type' => '',
+    'create_to_html_root' => NULL,
+    'ishtml' => NULL,
+    'content_ishtml' => NULL,
+    'category_ruleid' => NULL,
+    'show_ruleid' => '',
+    'workflowid' => NULL,
+    'isdomain' => '0',
+  ),
   1 => 
   array (
     'catid' => '1',

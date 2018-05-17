@@ -9,25 +9,25 @@
     <meta name="description" content="">
     <meta name="author" content="szwtdl.cn,Pixel grid studio">
     <title><?php echo L('phpcms_logon')?></title>
-    <link href="https://www.wuzhicms.com/res/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://www.wuzhicms.com/res/css/bootstrapreset.css" rel="stylesheet">
-    <link href="https://www.wuzhicms.com/res/css/pxgridsicons.min.css" rel="stylesheet">
-    <link href="https://www.wuzhicms.com/res/css/style.css" rel="stylesheet">
-    <link href="https://www.wuzhicms.com/res/css/responsive.css" rel="stylesheet" media="screen">
-    <link href="https://www.wuzhicms.com/res/css/animation.css" rel="stylesheet">
-    <script src="https://www.wuzhicms.com/res/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <script src="https://www.wuzhicms.com/res/js/jquery.min.js"></script>
+    <link href="<?php echo JS_PATH?>bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo JS_PATH?>bootstrapreset.css" rel="stylesheet">
+    <link href="<?php echo JS_PATH?>pxgridsicons.min.css" rel="stylesheet">
+    <link href="<?php echo JS_PATH?>style.css" rel="stylesheet">
+    <link href="<?php echo JS_PATH?>responsive.css" rel="stylesheet" media="screen">
+    <link href="<?php echo JS_PATH?>animation.css" rel="stylesheet">
+    <script src="<?php echo JS_PATH?>modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="<?php echo JS_PATH?>jquery.min.js"></script>
     <script type="text/javascript">
         var cookie_pre = "LRy_";var cookie_domain = '';var cookie_path = '';var web_url = 'https://www.wuzhicms.com/';
         var set_iframe_url = true;    </script>
-    <script src="https://www.wuzhicms.com/res/js/base.js"></script>
-    <script src="https://www.wuzhicms.com/res/js/wuzhicms.js"></script>
-    <script src="https://www.wuzhicms.com/res/js/jquery-easing.js"></script>
-    <script src="https://www.wuzhicms.com/res/js/responsivenav.js"></script>
+    <script src="<?php echo JS_PATH?>base.js"></script>
+    <script src="<?php echo JS_PATH?>wuzhicms.js"></script>
+    <script src="<?php echo JS_PATH?>jquery-easing.js"></script>
+    <script src="<?php echo JS_PATH?>responsivenav.js"></script>
     
     <!--[if lt IE 9]>
-    <script src="https://www.wuzhicms.com/res/js/html5shiv.js"></script>
-    <script src="https://www.wuzhicms.com/res/js/respond.min.js"></script>
+    <script src="<?php echo JS_PATH?>html5shiv.js"></script>
+    <script src="<?php echo JS_PATH?>respond.min.js"></script>
     <![endif]-->
 
     <!--[if lt IE 8]>
