@@ -12,8 +12,6 @@ class index{
      * 报名
      */
     public function init(){
-        $result = $this->db->select();
-        __print($result);
         include template('course','index');
     }
 
@@ -35,14 +33,20 @@ class index{
      * 添加报名
      */
     public function save(){
-        $data = $_POST['data'];
-        $data['addtime'] = time();
-        $data['updatetime'] = time();
-        if($this->db->insert($data)){
-            showmessage('录入成功');
+
+        if ($_POST['data']){
+            $data = $_POST['data'];
+            $data['addtime'] = time();
+            $data['updatetime'] = time();
+            if($this->db->insert($data)){
+                showmessage('录入成功');
+            }else{
+                showmessage('录入失败');
+            }
         }else{
-            showmessage('录入失败');
+            showmessage('非法数据');
         }
+
     }
 
 }

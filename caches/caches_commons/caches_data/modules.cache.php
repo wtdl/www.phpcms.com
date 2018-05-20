@@ -503,8 +503,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-16',
-    'updatedate' => '2018-05-16',
+    'installdate' => '2018-05-20',
+    'updatedate' => '2018-05-20',
   ),
 );
 ?>

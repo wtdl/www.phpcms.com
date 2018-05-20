@@ -1,0 +1,14 @@
+{template 'content', 'header'}
+
+<div class="main">
+    <form method="post" action="/index.php?m=course&c=index&a=search">
+        <p>姓名: <input type="text" name="data[nickname]"> </p>
+        <p>高考报名号: <input type="text" name="data[school_number]"> </p>
+        <p>身份证号码: <input type="text" name="data[card]"> </p>
+        <p>
+            <input type="submit" value="保存">
+            <input type="reset" value="重置">
+        </p>
+    </form>
+</div>
+{template 'content', 'footer'}
