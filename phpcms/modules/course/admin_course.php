@@ -21,8 +21,73 @@ class admin_course extends admin {
 
 
     public function init(){
-        exit();
+        $data = $this->db->select();
+        foreach ($data as &$row){
+            $row['sex'] = $row['sex']==1 ? '男' : '女';
+            $row['is_deny'] = empty($row['is_deny']) ? '开启' : '关闭';
+        }
         include $this->admin_tpl('course_list');
     }
 
+    /**
+     * 搜索结果列表
+     */
+    public function listorder(){
+        if (!empty($_POST)){
+            $where = array(
+                $_POST['type'] => trim($_POST['keyword'])
+            );
+            $data = $this->db->select($where);
+            include $this->admin_tpl('course_list');
+        }else{
+            showmessage('非法提交','goback');
+        }
+    }
+
+
+    /**
+     * 添加报名
+     */
+    public function add(){
+        if ($_GET['mid']){
+            $result = $this->db->get_one($_GET['mid']);
+        }
+        include $this->admin_tpl('course_add');
+    }
+
+    /**
+     * 编辑课程
+     */
+    public function edit(){
+        if (!empty($_POST['id'])){
+            $id = trim($_GET['id']);
+            $result = $this->db->get_one($id);
+        }else{
+            showmessage('操作异常','goback');
+        }
+        include $this->admin_tpl('course_edit');
+
+    }
+
+    /**
+     * 删除
+     */
+    public function delete(){
+
+    }
+
+
+    /**
+     * 导出学生
+     */
+    public function export(){
+
+    }
+
+    /**
+     * 导入学生
+     */
+    public function load(){
+        include $this->admin_tpl('course_load');
+    }
 }

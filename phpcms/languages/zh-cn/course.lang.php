@@ -4,11 +4,29 @@
 Add a new file(.lang.php) with your module name at /phpcms/languages/
 translation save at the array:$LANG
 */
-$LANG['course']						=	'课程';
-$LANG['course_manage']				=	'课程管理';
+$LANG['course']						    =	'课程列表';
+$LANG['course_manage']				    =	'课程管理';
 $LANG['course_list']					=	'课程列表';
-$LANG['course_add']					=	'课程公告';
-$LANG['course_title']					=	'课程标题：';
+$LANG['course_add']					    =	'添加课程';
+$LANG['course_title']					=	'课程标题';
+$LANG['course_id']                      =   '编号';
+$LANG['course_nickname']                =   '姓名';
+$LANG['course_school']                  =   '学校名称';
+$LANG['course_sex']                     =   '性别';
+$LANG['course_number']                  =   '高中报名编号';
+$LANG['course_card']                    =   '身份证号码';
+$LANG['course_phone']                   =   '手机号码';
+$LANG['course_tel']                     =   '家长电话';
+$LANG['course_deny']                    =   '状态';
+$LANG['course_time']                    =   '添加时间';
+$LANG['course_edit']					=	'编辑';
+$LANG['course_add']					    =	'添加';
+$LANG['course_del']					    =	'删除';
+$LANG['course_btn']                     =   '操作';
+$LANG['cancel_all_selected']			=	'取消批准选定的课程';
+$LANG['remove_all_selected']			=	'删除选定的课程';
+
+
 $LANG['title_cannot_empty']				=	'公告标题不能为空';
 $LANG['announcements_cannot_be_empty']	=	'公告内容不能为空';
 $LANG['announcement_successful_added']	=	'公告添加成功';
@@ -24,9 +42,8 @@ $LANG['inputer']						=	'录入者';
 $LANG['check_annonuce']					=	'审核公告';
 $LANG['preview']						=	'前台预览';
 $LANG['index']							=	'前台';
-$LANG['cancel_all_selected']			=	'取消批准选定的公告';
-$LANG['pass_all_selected']				=	'通过选定的公告';
-$LANG['remove_all_selected']			=	'删除选定的公告';
+
+
 $LANG['overdue_announce']				=	'过期公告';
 $LANG['no_pass_announce']				=	'未审核公告';
 $LANG['no_exists']						=	'此公告不存在或已删除！';

@@ -1,8 +1,8 @@
-{template 'content', 'header'}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template('content', 'header'); ?>
 
 <div class="main">
 
-    <form method="post" action="{APP_PATH}index.php?m=course&c=index">
+    <form method="post" action="<?php echo APP_PATH;?>index.php?m=course&c=index">
         <p>姓名: <input type="text" name="data[nickname]"> </p>
         <p>性别:
             <input type="radio" checked name="data[sex]" value="1"> 男
@@ -18,7 +18,7 @@
             <input type="reset" value="重置">
         </p>
     </form>
-    <a href="{APP_PATH}index.php?m=course&c=index&a=search">去查询</a>
+    <a href="<?php echo APP_PATH;?>index.php?m=course&c=index&a=search">去查询</a>
 </div>
 
-{template 'content', 'footer'}
+<?php include template('content', 'footer'); ?>

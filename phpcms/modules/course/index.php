@@ -1,52 +1,63 @@
 <?php
 defined('IN_PHPCMS') or exit('No permission resources.');
 
-class index{
+class index
+{
     private $db;
+
     public function __construct()
     {
+        pc_base::load_app_func('global');
+        pc_base::load_sys_class('format', '', 0);
         $this->db = pc_base::load_model('course_model');
     }
 
     /**
      * 报名
      */
-    public function init(){
-        include template('course','index');
+    public function init()
+    {
+        if ($_POST['data']) {
+            $data = $_POST['data'];
+            $data['addtime'] = time();
+            $data['updatetime'] = time();
+            if ($this->db->insert($data)) {
+                showmessage('录入成功');
+            } else {
+                showmessage('录入失败');
+            }
+        }
+        include template('course', 'index');
     }
 
 
     /**
      * 搜索成绩
      */
-    public function search(){
-        include template('course','search');
+    public function search()
+    {
+        include template('course', 'search');
     }
-
-
-    public function lists(){
-        include template('course','list');
-    }
-
 
     /**
-     * 添加报名
+     * 搜索结果列表
      */
-    public function save(){
-
-        if ($_POST['data']){
+    public function lists(){
+        if ($_POST['data']) {
             $data = $_POST['data'];
-            $data['addtime'] = time();
-            $data['updatetime'] = time();
-            if($this->db->insert($data)){
-                showmessage('录入成功');
-            }else{
-                showmessage('录入失败');
+            if (!empty($data)) {
+                $where = [];
+                foreach ($data as $key => $val) {
+                    if (empty($val)) {
+                        continue;
+                    }
+                    $where[$key] = $val;
+                }
+                $where['is_deny'] = 0;
+                $school = $this->db->select($where, '*', 20, 'id DESC');
             }
-        }else{
-            showmessage('非法数据');
         }
-
+        include template('course', 'search');
     }
 
 }

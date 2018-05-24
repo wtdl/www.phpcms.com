@@ -459,3 +459,99 @@
 <?php exit;?>05-20 23:30:26 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
 <?php exit;?>05-20 23:30:27 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
 <?php exit;?>05-20 23:30:27 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:18:07 | 2 | rmdir(/var/www/phpcms/phpcms/templates/default/course/): Permission denied | phpcms/libs/functions/dir.func.php | 154
+<?php exit;?>05-24 20:18:07 | 2 | file_put_contents(/var/www/phpcms/phpcms/templates/default/config.php): failed to open stream: Permission denied | phpcms/modules/admin/classes/module_api.class.php | 197
+<?php exit;?>05-24 20:18:10 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:10 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:10 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:10 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:11 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:11 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:11 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:11 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:12 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:12 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:12 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:12 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:13 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:18:13 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:18:38 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:38 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:38 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:38 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:18:39 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:39 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:39 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:39 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:18:40 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:40 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:40 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:40 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:18:40 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:18:40 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:19:23 | 2 | rmdir(/var/www/phpcms/phpcms/templates/default/course/): Permission denied | phpcms/libs/functions/dir.func.php | 154
+<?php exit;?>05-24 20:19:23 | 2 | file_put_contents(/var/www/phpcms/phpcms/templates/default/config.php): failed to open stream: Permission denied | phpcms/modules/admin/classes/module_api.class.php | 197
+<?php exit;?>05-24 20:19:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:19:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:19:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:19:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:19:27 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:19:27 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:19:27 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:19:27 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:19:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:19:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:19:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:19:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:19:29 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:19:29 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:20:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:20:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:20:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:20:19 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:20:20 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:20:20 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:20:20 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:20:20 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:20:22 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:20:22 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:20:22 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:20:22 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:20:23 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:20:23 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:21:22 | 2 | rmdir(/var/www/phpcms/phpcms/templates/default/course/): Permission denied | phpcms/libs/functions/dir.func.php | 154
+<?php exit;?>05-24 20:21:22 | 2 | file_put_contents(/var/www/phpcms/phpcms/templates/default/config.php): failed to open stream: Permission denied | phpcms/modules/admin/classes/module_api.class.php | 197
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:26 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:28 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:28 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:21:28 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:21:47 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:47 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:47 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:47 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 273
+<?php exit;?>05-24 20:21:48 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:48 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:48 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:48 | 2 | chmod(): Operation not permitted | phpcms/modules/admin/classes/cache_api.class.php | 394
+<?php exit;?>05-24 20:21:49 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:49 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:49 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:49 | 2 | chmod(): Operation not permitted | phpcms/modules/formguide/classes/formguide.class.php | 35
+<?php exit;?>05-24 20:21:50 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: No address associated with hostname | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:21:50 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: No address associated with hostname) | phpcms/libs/classes/http.class.php | 84
+<?php exit;?>05-24 20:35:03 | 2 | trim() expects parameter 1 to be string, array given | phpcms/modules/course/index.php | 25
+<?php exit;?>05-24 20:35:07 | 2 | trim() expects parameter 1 to be string, array given | phpcms/modules/course/index.php | 25
+<?php exit;?>05-24 20:36:02 | 2 | trim() expects parameter 1 to be string, array given | phpcms/modules/course/index.php | 25
+<?php exit;?>05-24 20:36:45 | 2 | trim() expects parameter 1 to be string, array given | phpcms/modules/course/index.php | 24
+<?php exit;?>05-24 20:36:54 | 2 | trim() expects parameter 1 to be string, array given | phpcms/modules/course/index.php | 24
+<?php exit;?>05-24 20:37:10 | 2 | trim() expects parameter 1 to be string, array given | phpcms/modules/course/index.php | 24

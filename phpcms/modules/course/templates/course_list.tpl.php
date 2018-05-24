@@ -3,39 +3,56 @@ defined('IN_ADMIN') or exit('No permission resources.');
 include $this->admin_tpl('header', 'admin');
 ?>
 <div class="pad-lr-10">
-<form name="myform" action="?m=announce&c=admin_announce&a=listorder" method="post">
+<form name="myform" action="?m=course&c=admin_course&a=listorder" method="post">
+<div class="table-list">
+    <select name="type">
+        <option value="nickname">姓名</option>
+        <option value="nickname">姓名</option>
+        <option value="nickname">姓名</option>
+        <option value="nickname">姓名</option>
+        <option value="nickname">姓名</option>
+    </select>
+    <input type="text" name="keyword" placeholder="搜索内容">
+    <input type="submit" value="搜索">
+</div>
 <div class="table-list">
     <table width="100%" cellspacing="0">
         <thead>
             <tr>
             <th width="35" align="center"><input type="checkbox" value="" id="check_box" onclick="selectall('aid[]');"></th>
-			<th align="center"><?php echo L('title')?></th>
-			<th width="68" align="center"><?php echo L('startdate')?></th>
-			<th width='68' align="center"><?php echo L('enddate')?></th>
-			<th width='68' align="center"><?php echo L('inputer')?></th>
-			<th width="50" align="center"><?php echo L('hits')?></th>
-			<th width="120" align="center"><?php echo L('inputtime')?></th>
-			<th width="69" align="center"><?php echo L('operations_manage')?></th>
+			<th align="center"><?php echo L('course_nickname')?></th>
+			<th width="68" align="center"><?php echo L('course_sex')?></th>
+			<th width='68' align="center"><?php echo L('course_school')?></th>
+			<th width='68' align="center"><?php echo L('course_number')?></th>
+			<th width="50" align="center"><?php echo L('course_card')?></th>
+			<th width="120" align="center"><?php echo L('course_phone')?></th>
+            <th width="69" align="center"><?php echo L('course_tel')?></th>
+            <th width="69" align="center"><?php echo L('course_deny')?></th>
+            <th width="69" align="center"><?php echo L('course_time')?></th>
+            <th align="center"><?php echo L('course_btn')?></th>
             </tr>
         </thead>
     <tbody>
  <?php 
 if(is_array($data)){
-	foreach($data as $announce){
+	foreach($data as $course){
 ?>   
 	<tr>
 	<td align="center">
-	<input type="checkbox" name="aid[]" value="<?php echo $announce['aid']?>">
+	<input type="checkbox" name="aid[]" value="<?php echo $course['id']?>">
 	</td>
-	<td><?php echo $announce['title']?></td>
-	<td align="center"><?php echo $announce['starttime']?></td>
-	<td align="center"><?php echo $announce['endtime']?></td>
-	<td align="center"><?php echo $announce['username']?></td>
-	<td align="center"><?php echo $announce['hits']?></td>
-	<td align="center"><?php echo date('Y-m-d H:i:s', $announce['addtime'])?></td>
+	<td align="center"><?php echo $course['nickname']?></td>
+	<td align="center"><?php echo $course['sex']?></td>
+	<td align="center"><?php echo $course['school']?></td>
+    <td align="center"><?php echo $course['school_number']?></td>
+    <td align="center"><?php echo $course['card']?></td>
+    <td align="center"><?php echo $course['phone']?></td>
+    <td align="center"><?php echo $course['parents_phone']?></td>
+    <td align="center"><?php echo $course['is_deny']?></td>
+	<td align="center"><?php echo date('Y-m-d H:i:s', $course['addtime'])?></td>
 	<td align="center">
-	<?php if ($_GET['s']==1) {?><a href="?m=announce&c=index&a=show&aid=<?php echo $announce['aid']?>" title="<?php echo L('preview')?>"  target="_blank"><?php }?><?php echo L('index')?><?php if ($_GET['s']==1) {?></a><?php }?> | 
-	<a href="javascript:edit('<?php echo $announce['aid']?>', '<?php echo safe_replace($announce['title'])?>');void(0);"><?php echo L('edit')?></a>
+	<?php if ($_GET['s']==1) {?><a href="?m=course&c=index&a=show&aid=<?php echo $course['aid']?>" title="<?php echo L('preview')?>"  target="_blank"><?php }?><?php echo L('index')?><?php if ($_GET['s']==1) {?></a><?php }?> |
+	<a href="javascript:edit('<?php echo $course['aid']?>', '<?php echo safe_replace($course['title'])?>');void(0);"><?php echo L('edit')?></a>
 	</td>
 	</tr>
 <?php 
@@ -56,7 +73,7 @@ if(is_array($data)){
 <script type="text/javascript">
 function edit(id, title) {
 	window.top.art.dialog({id:'edit'}).close();
-	window.top.art.dialog({title:'<?php echo L('edit_announce')?>--'+title, id:'edit', iframe:'?m=announce&c=admin_course&a=edit&aid='+id ,width:'700px',height:'500px'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;
+	window.top.art.dialog({title:'<?php echo L('edit_announce')?>--'+title, id:'edit', iframe:'?m=course&c=admin_course&a=edit&aid='+id ,width:'700px',height:'500px'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;
 	var form = d.document.getElementById('dosubmit');form.click();return false;}, function(){window.top.art.dialog({id:'edit'}).close()});
 }
 </script>
