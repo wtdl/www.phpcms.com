@@ -20,7 +20,7 @@ include $this->admin_tpl('header', 'admin');
         <thead>
             <tr>
             <th width="35" align="center"><input type="checkbox" value="" id="check_box" onclick="selectall('aid[]');"></th>
-			<th align="center"><?php echo L('course_nickname')?></th>
+			<th width="68" align="center"><?php echo L('course_nickname')?></th>
 			<th width="68" align="center"><?php echo L('course_sex')?></th>
 			<th width='68' align="center"><?php echo L('course_school')?></th>
 			<th width='68' align="center"><?php echo L('course_number')?></th>
@@ -28,7 +28,8 @@ include $this->admin_tpl('header', 'admin');
 			<th width="120" align="center"><?php echo L('course_phone')?></th>
             <th width="69" align="center"><?php echo L('course_tel')?></th>
             <th width="69" align="center"><?php echo L('course_deny')?></th>
-            <th width="69" align="center"><?php echo L('course_time')?></th>
+            <th width="130" align="center"><?php echo L('course_time')?></th>
+            <th width="130" align="center"><?php echo L('course_update')?></th>
             <th align="center"><?php echo L('course_btn')?></th>
             </tr>
         </thead>
@@ -38,9 +39,7 @@ if(is_array($data)){
 	foreach($data as $course){
 ?>   
 	<tr>
-	<td align="center">
-	<input type="checkbox" name="aid[]" value="<?php echo $course['id']?>">
-	</td>
+	<td align="center"><input type="checkbox" name="aid[]" value="<?php echo $course['id']?>"></td>
 	<td align="center"><?php echo $course['nickname']?></td>
 	<td align="center"><?php echo $course['sex']?></td>
 	<td align="center"><?php echo $course['school']?></td>
@@ -49,11 +48,13 @@ if(is_array($data)){
     <td align="center"><?php echo $course['phone']?></td>
     <td align="center"><?php echo $course['parents_phone']?></td>
     <td align="center"><?php echo $course['is_deny']?></td>
-	<td align="center"><?php echo date('Y-m-d H:i:s', $course['addtime'])?></td>
+    <td align="center"><?php echo date('Y-m-d H:i:s', $course['addtime'])?></td>
+    <td align="center"><?php echo date('Y-m-d H:i:s', $course['updatetime'])?></td>
 	<td align="center">
-	<?php if ($_GET['s']==1) {?><a href="?m=course&c=index&a=show&aid=<?php echo $course['aid']?>" title="<?php echo L('preview')?>"  target="_blank"><?php }?><?php echo L('index')?><?php if ($_GET['s']==1) {?></a><?php }?> |
-	<a href="javascript:edit('<?php echo $course['aid']?>', '<?php echo safe_replace($course['title'])?>');void(0);"><?php echo L('edit')?></a>
-	</td>
+	<?php if ($_GET['s']==1) {?><a href="?m=course&c=index&aid=<?php echo $course['id']?>" title="<?php echo L('preview')?>"  target="_blank"><?php }?><?php echo L('index')?><?php if ($_GET['s']==1) {?></a><?php }?> |
+	<a href="javascript:edit('<?php echo $course['id']?>', '<?php echo safe_replace($course['nickname'])?>');void(0);"><?php echo L('edit')?></a>
+
+    </td>
 	</tr>
 <?php 
 	}
@@ -63,8 +64,8 @@ if(is_array($data)){
     </table>
   
     <div class="btn"><label for="check_box"><?php echo L('selected_all')?>/<?php echo L('cancel')?></label>
-        <?php if($_GET['s']==1) {?><input name='submit' type='submit' class="button" value='<?php echo L('cancel_all_selected')?>' onClick="document.myform.action='?m=announce&c=admin_announce&a=public_approval&passed=0'"><?php } elseif($_GET['s']==2) {?><input name='submit' type='submit' class="button" value='<?php echo L('pass_all_selected')?>' onClick="document.myform.action='?m=announce&c=admin_announce&a=public_approval&passed=1'"><?php }?>&nbsp;&nbsp;
-		<input name="submit" type="submit" class="button" value="<?php echo L('remove_all_selected')?>" onClick="document.myform.action='?m=announce&c=admin_announce&a=delete';return confirm('<?php echo L('affirm_delete')?>')">&nbsp;&nbsp;</div>  </div>
+        <?php if($_GET['s']==1) {?><input name='submit' type='submit' class="button" value='<?php echo L('cancel_all_selected')?>' onClick="document.myform.action='?m=course&c=admin_course&a=public_approval&passed=0'"><?php } elseif($_GET['s']==2) {?><input name='submit' type='submit' class="button" value='<?php echo L('pass_all_selected')?>' onClick="document.myform.action='?m=course&c=admin_course&a=public_approval&passed=1'"><?php }?>&nbsp;&nbsp;
+		<input name="submit" type="submit" class="button" value="<?php echo L('remove_all_selected')?>" onClick="document.myform.action='?m=course&c=admin_course&a=delete';return confirm('<?php echo L('affirm_delete')?>')">&nbsp;&nbsp;</div>  </div>
  <div id="pages"><?php echo $this->db->pages;?></div>
 </form>
 </div>
@@ -73,7 +74,7 @@ if(is_array($data)){
 <script type="text/javascript">
 function edit(id, title) {
 	window.top.art.dialog({id:'edit'}).close();
-	window.top.art.dialog({title:'<?php echo L('edit_announce')?>--'+title, id:'edit', iframe:'?m=course&c=admin_course&a=edit&aid='+id ,width:'700px',height:'500px'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;
+	window.top.art.dialog({title:'<?php echo L('edit_course')?>--'+title, id:'edit', iframe:'?m=course&c=admin_course&a=edit&aid='+id ,width:'700px',height:'400px'}, function(){var d = window.top.art.dialog({id:'edit'}).data.iframe;
 	var form = d.document.getElementById('dosubmit');form.click();return false;}, function(){window.top.art.dialog({id:'edit'}).close()});
 }
 </script>

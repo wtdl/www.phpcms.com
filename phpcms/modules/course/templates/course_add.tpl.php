@@ -3,42 +3,57 @@ defined('IN_ADMIN') or exit('No permission resources.');
 include $this->admin_tpl('header', 'admin');
 ?>
 <div class="pad-10">
-<form method="post" action="?m=announce&c=admin_announce&a=add" name="myform" id="myform">
+<form method="post" action="?m=course&c=admin_course&a=add" name="myform" id="myform">
 <table class="table_form" width="100%" cellspacing="0">
 <tbody>
-	<tr>
-		<th width="80"><strong><?php echo L('announce_title')?></strong></th>
-		<td><input name="announce[title]" id="title" class="input-text" type="text" size="50" ></td>
-	</tr>
-	<tr>
-		<th><strong><?php echo L('startdate')?>：</strong></th>
-		<td><?php echo form::date('announce[starttime]', date('Y-m-d H:i:s'), 1)?></td>
-	</tr>
-	<tr>
-		<th><strong><?php echo L('enddate')?>：</strong></th>
-		<td><?php echo form::date('announce[endtime]', $an_info['endtime'], 1);?></td>
-	</tr>
-	<tr>
-		<th><strong><?php echo L('announce_content')?></strong></th>
-		<td><textarea name="announce[content]" id="content"></textarea><?php echo form::editor('content');?></td>
-	</tr>
-	<tr>
-  		<th><strong><?php echo L('available_style')?>：</strong></th>
-        <td>
-		<?php echo form::select($template_list, $info['default_style'], 'name="announce[style]" id="style" onchange="load_file_list(this.value)"', L('please_select'))?> 
-		</td>
-	</tr>
-	<tr>
-		<th><strong><?php echo L('template_select')?>：</strong></th>
-		<td id="show_template"><script type="text/javascript">$.getJSON('?m=admin&c=category&a=public_tpl_file_list&style=<?php echo $info['default_style']?>&module=announce&templates=show&name=announce&pc_hash='+pc_hash, function(data){$('#show_template').html(data.show_template);});</script></td>
-	</tr>
-	<tr>
-		<th><strong><?php echo L('announce_status')?></strong></th>
-		<td><input name="announce[passed]" type="radio" value="1" checked>&nbsp;<?php echo L('pass')?>&nbsp;&nbsp;<input name="announce[passed]" type="radio" value="0">&nbsp;<?php echo L('unpass')?></td>
-	</tr>
+<tr>
+    <th width="80"><?php echo L('course_nickname')?></th>
+    <td><input name="course[nickname]" id="title" class="input-text" type="text" size="50" ></td>
+</tr>
+<tr>
+    <th><?php echo L('course_sex')?></th>
+    <td>
+        <select name="course[sex]">
+            <option value="1" >男</option>
+            <option value="2" >女</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <th><?php echo L('course_school')?></th>
+    <td >
+        <input type="text" name="course[school]"  class="input-text" size="50">
+    </td>
+</tr>
+<tr>
+    <th><?php echo L('course_number')?></th>
+    <td><input type="text" name="course[school_number]"  class="input-text" size="50"></td>
+</tr>
+<tr>
+    <th><?php echo L('course_card')?></th>
+    <td><input type="text" name="course[card]" class="input-text" size="50"></td>
+</tr>
+<tr>
+    <th><?php echo L('course_phone') ?></th>
+    <td><input type="text" name="course[phone]" class="input-text" size="50"></td>
+</tr>
+<tr>
+    <th><?php echo L('course_tel')?></th>
+    <td><input type="text" name="course[parents_phone]" class="input-text" size="50"></td>
+</tr>
+<tr>
+    <th><?php echo L('course_deny')?></th>
+    <td>
+        <input type="radio" checked name="course[is_deny]" value="0"> 开启
+        <input type="radio" name="course[is_deny]" value="1"> 关闭
+</tr>
+<tr>
+    <td>
+        <input type="submit" name="dosubmit" id="dosubmit" value=" <?php echo L('ok')?> ">&nbsp;<input type="reset" value=" <?php echo L('clear')?> ">
+    </td>
+</tr>
 	</tbody>
 </table>
-<input type="submit" name="dosubmit" id="dosubmit" value=" <?php echo L('ok')?> " class="dialog">&nbsp;<input type="reset" class="dialog" value=" <?php echo L('clear')?> ">
 </form>
 </div>
 </body>

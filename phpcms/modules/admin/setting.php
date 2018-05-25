@@ -45,7 +45,6 @@ class setting extends admin {
 		$setting['errorlog_size'] = trim($_POST['setting']['errorlog_size']);
 		$setting = array2string($setting);
 		$this->db->update(array('setting'=>$setting), array('module'=>'admin')); //存入admin模块setting字段
-		
 		//如果开始盛大通行证接入，判断服务器是否支持curl
 		$snda_error = '';
 		if($_POST['setconfig']['snda_akey'] || $_POST['setconfig']['snda_skey']) {

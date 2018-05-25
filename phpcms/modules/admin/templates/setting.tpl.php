@@ -48,7 +48,7 @@ include $this->admin_tpl('header');?>
     <td class="y-bg">
     <input name="setconfig[gzip]" value="1"  type="radio"  <?php echo ($gzip=='1') ? ' checked' : ''?>> <?php echo L('setting_yes')?>&nbsp;&nbsp;&nbsp;&nbsp;
 	<input name="setconfig[gzip]" value="0" type="radio"  <?php echo ($gzip=='0') ? ' checked' : ''?>> <?php echo L('setting_no')?></td>
-  </tr> 
+  </tr>
   <tr>
     <th width="120"><?php echo L('setting_attachment_stat')?></th>
     <td class="y-bg">

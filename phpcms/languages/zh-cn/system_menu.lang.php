@@ -457,7 +457,6 @@ $LANG['player_manage'] = '播放器管理';
 $LANG['video_upload'] = '视频上传'; 
 $LANG['course'] = '报名课程';
 $LANG['course_add'] = '添加课程';
-$LANG['edit_course'] = '编辑课程';
-$LANG['check_course'] = '审核课程';
-$LANG['del_course'] = '删除课程';
+$LANG['course_setting'] = '课程配置';
+$LANG['course_load'] = '导入Excel';
 ?>

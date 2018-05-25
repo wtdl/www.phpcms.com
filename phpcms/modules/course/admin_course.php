@@ -30,6 +30,16 @@ class admin_course extends admin {
     }
 
     /**
+     * 配置在线课程
+     */
+    public function setting(){
+        if (!empty($_POST)){
+            __print($_POST);
+        }
+        include $this->admin_tpl('course_setting');
+    }
+
+    /**
      * 搜索结果列表
      */
     public function listorder(){
@@ -48,9 +58,16 @@ class admin_course extends admin {
     /**
      * 添加报名
      */
-    public function add(){
-        if ($_GET['mid']){
-            $result = $this->db->get_one($_GET['mid']);
+    public function add()
+    {
+        if (!empty($_POST['course'])) {
+            $data = $_POST['course'];
+            $data['addtime'] = time();
+            $data['updatetime'] = time();
+            if ($this->db->insert($data)) {
+                showmessage(L('course_insert_ok'), '?m=course&c=admin_course&a=init&s=1');
+            }
+            showmessage(L('course_insert_error'), HTTP_REFERER);
         }
         include $this->admin_tpl('course_add');
     }
@@ -60,11 +77,13 @@ class admin_course extends admin {
      */
     public function edit(){
         if (!empty($_POST['id'])){
-            $id = trim($_GET['id']);
-            $result = $this->db->get_one($id);
-        }else{
-            showmessage('操作异常','goback');
+            $update = $_POST['course'];
+            unset($update['addtime']);
+            $update['updatetime'] = time();
+            $this->db->update($update,array('id'=>trim($_POST['id'])));
+            showmessage(L('course_update_ok'),'goback');
         }
+        $an_info = $this->db->get_one(array('id'=>trim($_GET['aid'])));
         include $this->admin_tpl('course_edit');
 
     }
@@ -74,14 +93,28 @@ class admin_course extends admin {
      */
     public function delete(){
 
+        if (!empty($_POST['aid'])){
+            $data = $_POST['aid'];
+            foreach ($data as $key=>$val){
+                $this->db->delete(array('id'=>$val));
+            }
+            showmessage(L('course_delete_ok'),'goback');
+        }
+        showmessage(L('course_delete_ok'),'goback');
     }
 
+    /**
+     * 批量处理
+     */
+    public function public_approval(){
+        __print($_GET);
+    }
 
     /**
      * 导出学生
      */
     public function export(){
-
+        __print($_GET);
     }
 
     /**

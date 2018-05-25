@@ -3,40 +3,61 @@ defined('IN_ADMIN') or exit('No permission resources.');
 include $this->admin_tpl('header', 'admin');
 ?>
 <div class="pad-10">
-<form method="post" action="?m=announce&c=admin_announce&a=edit&aid=<?php echo $_GET['aid']?>" name="myform" id="myform">
+<form method="post" action="?m=course&c=admin_course&a=edit&aid=<?php echo $_GET['aid']?>" name="myform" id="myform">
 <table class="table_form" width="100%">
 <tbody>
 	<tr>
-		<th width="80"><?php echo L('announce_title')?></th>
-		<td><input name="announce[title]" id="title" value="<?php echo new_html_special_chars($an_info['title'])?>" class="input-text" type="text" size="50" ></td>
+		<th width="80"><?php echo L('course_nickname')?></th>
+		<td><input name="course[nickname]" id="title" value="<?php echo new_html_special_chars($an_info['nickname'])?>" class="input-text" type="text" size="50" ></td>
 	</tr>
+    <tr>
+        <th><?php echo L('course_sex')?></th>
+        <td>
+            <select name="course[sex]">
+                <option value="1" <?php echo $an_info['sex']==1 ? 'selected' : ''?>>男</option>
+                <option value="2" <?php echo $an_info['sex']==2 ? 'selected' : ''?>>女</option>
+            </select>
+        </td>
+    </tr>
 	<tr>
-		<th><?php echo L('startdate')?>：</th>
-		<td><?php echo form::date('announce[starttime]', $an_info['starttime'], 1)?></td>
-	</tr>
-	<tr>
-		<th><?php echo L('enddate')?>：</th>
-		<td><?php $an_info['endtime'] = $an_info['endtime']=='0000-00-00' ? '' : $an_info['endtime']; echo form::date('announce[endtime]', $an_info['endtime'], 1);?></td>
-	</tr>
-	<tr>
-		<th><?php echo L('announce_content')?></th>
+		<th><?php echo L('course_school')?></th>
 		<td >
-		<textarea name="announce[content]" id="content"><?php echo $an_info['content']?></textarea>
-		<?php echo form::editor('content','basic');?>
+            <input type="text" name="course[school]" value="<?php echo $an_info['school']?>" class="input-text" size="50">
 		</td>
 	</tr>
-	<tr>
-  		<th><strong><?php echo L('available_style')?>：</strong></th>
-        <td><?php echo form::select($template_list, $an_info['style'], 'name="announce[style]" id="style" onchange="load_file_list(this.value)"', L('please_select'))?></td>
-	</tr>
-	<tr>
-		<th><?php echo L('template_select')?>：</th>
-		<td  id="show_template"><?php if ($an_info['style']) echo '<script type="text/javascript">$.getJSON(\'?m=admin&c=category&a=public_tpl_file_list&style='.$an_info['style'].'&id='.$an_info['show_template'].'&module=announce&templates=show&name=announce&pc_hash=\'+pc_hash, function(data){$(\'#show_template\').html(data.show_template);});</script>'?></td>
-	</tr>
-	<tr>
-		<th><?php echo L('announce_status')?></th>
-		<td><input name="announce[passed]" type="radio" value="1" <?php if($an_info['passed']==1) {?>checked<?php }?>></input>&nbsp;<?php echo L('pass')?>&nbsp;&nbsp;<input name="announce[passed]" type="radio" value="0" <?php if($an_info['passed']==0) {?>checked<?php }?>>&nbsp;<?php echo L('unpass')?></td>
-	</tr>
+    <tr>
+        <th><?php echo L('course_number')?></th>
+        <td><input type="text" name="course[school_number]" value="<?php echo $an_info['school_number']?>" class="input-text" size="50"></td>
+    </tr>
+    <tr>
+        <th><?php echo L('course_card')?></th>
+        <td><input type="text" name="course[card]" value="<?php echo $an_info['card']?>" class="input-text" size="50"></td>
+    </tr>
+    <tr>
+        <th><?php echo L('course_phone') ?></th>
+        <td><input type="text" name="course[phone]" value="<?php echo $an_info['phone']?>" class="input-text" size="50"></td>
+    </tr>
+    <tr>
+        <th><?php echo L('course_tel')?></th>
+        <td><input type="text" name="course[parents_phone]" value="<?php echo $an_info['parents_phone']?>" class="input-text" size="50"></td>
+    </tr>
+    <tr>
+        <th><?php echo L('course_deny')?></th>
+        <td>
+            <label><input type="radio" name="course[is_deny]" <?php echo $an_info['is_deny']==0 ? 'checked' : ''?>  value="0"> 开启</label>
+            <label><input type="radio" name="course[is_deny]" <?php echo $an_info['is_deny']==1 ? 'checked' : ''?>  value="1"> 关闭</label>
+    </tr>
+    <tr>
+        <th><?php echo L('course_time') ?></th>
+        <td><input type="text" name="course[addtime]" value="<?php echo date('Y-m-d H:i:s',$an_info['addtime'])?>" readonly="readonly" class="input-text" size="50"></td>
+    </tr>
+    <tr>
+        <th><?php echo L('course_update') ?></th>
+        <td>
+            <input type="hidden" name="id" value="<?php echo $an_info['id']?>">
+            <input type="text" name="course[updatetime]" value="<?php echo date('Y-m-d H:i:s',$an_info['updatetime'])?>" readonly="readonly" class="input-text" size="50">
+        </td>
+    </tr>
     </tbody>
 </table>
 <input type="submit" name="dosubmit" id="dosubmit" value=" <?php echo L('ok')?> " class="dialog">&nbsp;<input type="reset" class="dialog" value=" <?php echo L('clear')?> ">
