@@ -1,1 +1,1 @@
-INSERT INTO `phpcms_module` (`module`, `name`, `url`, `iscore`, `version`, `description`, `setting`, `listorder`, `disabled`, `installdate`, `updatedate`) VALUES ('course', '报名课程', 'course/', 0, '1.0', '报名课程', '', 0, 0, '2010-9-05', '2010-9-05');
+INSERT INTO `phpcms_module` (`module`, `name`, `url`, `iscore`, `version`, `description`, `setting`, `listorder`, `disabled`, `installdate`, `updatedate`) VALUES ('course', '报名课程', 'course/', 0, '2.0', '彭剑开发(定制开发)', '', 0, 0, '2010-9-05', '2010-9-05');

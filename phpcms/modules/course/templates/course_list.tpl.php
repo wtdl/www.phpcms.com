@@ -19,17 +19,17 @@ include $this->admin_tpl('header', 'admin');
     <table width="100%" cellspacing="0">
         <thead>
             <tr>
-            <th width="35" align="center"><input type="checkbox" value="" id="check_box" onclick="selectall('aid[]');"></th>
-			<th width="68" align="center"><?php echo L('course_nickname')?></th>
-			<th width="68" align="center"><?php echo L('course_sex')?></th>
-			<th width='68' align="center"><?php echo L('course_school')?></th>
-			<th width='68' align="center"><?php echo L('course_number')?></th>
-			<th width="50" align="center"><?php echo L('course_card')?></th>
-			<th width="120" align="center"><?php echo L('course_phone')?></th>
-            <th width="69" align="center"><?php echo L('course_tel')?></th>
-            <th width="69" align="center"><?php echo L('course_deny')?></th>
-            <th width="130" align="center"><?php echo L('course_time')?></th>
-            <th width="130" align="center"><?php echo L('course_update')?></th>
+            <th align="center"><input type="checkbox" value="" id="check_box" onclick="selectall('aid[]');"></th>
+			<th align="center"><?php echo L('course_nickname')?></th>
+			<th align="center"><?php echo L('course_sex')?></th>
+			<th align="center"><?php echo L('course_school')?></th>
+			<th align="center"><?php echo L('course_number')?></th>
+			<th align="center"><?php echo L('course_card')?></th>
+			<th align="center"><?php echo L('course_phone')?></th>
+            <th align="center"><?php echo L('course_tel')?></th>
+            <th align="center"><?php echo L('course_deny')?></th>
+            <th align="center"><?php echo L('course_time')?></th>
+            <th align="center"><?php echo L('course_update')?></th>
             <th align="center"><?php echo L('course_btn')?></th>
             </tr>
         </thead>

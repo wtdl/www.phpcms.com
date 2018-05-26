@@ -12,6 +12,5 @@ return array (
   'mail_from' => 'phpcms.cn@foxmail.com',
   'mail_password' => '',
   'errorlog_size' => '20',
-  'course' => '2',
 );
 ?>

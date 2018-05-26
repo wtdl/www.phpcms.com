@@ -4,7 +4,7 @@
 Add a new file(.lang.php) with your module name at /phpcms/languages/
 translation save at the array:$LANG
 */
-$LANG['course']						    =	'报名列表';
+$LANG['course']						    =	'课程列表';
 $LANG['course_manage']				    =	'课程管理';
 $LANG['course_list']					=	'课程列表';
 $LANG['course_add']					    =	'添加课程';

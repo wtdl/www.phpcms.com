@@ -1,6 +1,5 @@
 <?php
 defined('IN_PHPCMS') or exit('No permission resources.');
-
 class index
 {
     private $db;
@@ -22,9 +21,9 @@ class index
             $data['addtime'] = time();
             $data['updatetime'] = time();
             if ($this->db->insert($data)) {
-                showmessage('录入成功');
+                showmessage(L('course_insert_ok'),'?m=course&c=index');
             } else {
-                showmessage('录入失败');
+                showmessage(L('course_insert_error'),'goback');
             }
         }
         include template('course', 'index');

@@ -15,8 +15,8 @@ include $this->admin_tpl('header', 'admin');
                 <tr>
                     <th width="80">是否需要登录</th>
                     <td>
-                        <label><input type="radio" name="course_setting" value="1"> 需要</label>
-                        <label><input type="radio" name="course_setting" checked value="2"> 不需要</label>
+                        <label><input type="radio" name="course_setting" <?php echo $course_system['course_setting'] ==1 ? 'checked' : ''?>  value="1"> 需要</label>
+                        <label><input type="radio" name="course_setting" <?php echo $course_system['course_setting'] ==2 ? 'checked' : ''?> value="2"> 不需要</label>
                     </td>
                 </tr>
                 <tr>

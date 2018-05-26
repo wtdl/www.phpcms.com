@@ -11,6 +11,7 @@ class foreground {
 		if(substr(ROUTE_A, 0, 7) != 'public_') {
 			self::check_member();
 		}
+		
 	}
 	
 	/**

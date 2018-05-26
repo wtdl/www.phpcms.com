@@ -7,20 +7,21 @@
  */
 defined('IN_PHPCMS') or exit('No permission resources.');
 pc_base::load_app_class('admin','admin',0);
-pc_base::load_app_func('course','course');
+pc_base::load_app_func('course');
 
 class admin_course extends admin {
 
-    private $db; public $username;
+    private $db; 
+    public $username;
     public function __construct()
     {
         parent::__construct();
-        $this->username = param::get_cookie('admin_username');
         $this->db = pc_base::load_model('course_model');
     }
 
 
     public function init(){
+        // exportExcel('用户数据');
         $data = $this->db->select();
         foreach ($data as &$row){
             $row['sex'] = $row['sex']==1 ? '男' : '女';
@@ -34,8 +35,12 @@ class admin_course extends admin {
      */
     public function setting(){
         if (!empty($_POST)){
-            __print($_POST);
+            if (setcache('course_system',array('course_setting'=>trim($_POST['course_setting'])),'commons')) {
+                showmessage(L('course_update_ok'),'?m=course&c=admin_course&a=init');
+            }
+            showmessage(L('course_update_error'),'goback');
         }
+        $course_system = getcache('course_system','commons');
         include $this->admin_tpl('course_setting');
     }
 
