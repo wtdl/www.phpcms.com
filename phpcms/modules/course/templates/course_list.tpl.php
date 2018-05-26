@@ -6,11 +6,11 @@ include $this->admin_tpl('header', 'admin');
 <form name="myform" action="?m=course&c=admin_course&a=listorder" method="post">
 <div class="table-list">
     <select name="type">
-        <option value="nickname">姓名</option>
-        <option value="nickname">姓名</option>
-        <option value="nickname">姓名</option>
-        <option value="nickname">姓名</option>
-        <option value="nickname">姓名</option>
+        <option value="nickname"><?php echo L('course_nickname')?></option>
+        <option value="school"><?php echo L('course_school')?></option>
+        <option value="school_number"><?php echo L('course_number')?></option>
+        <option value="card"><?php echo L('course_card')?></option>
+        <option value="phone"><?php echo L('course_phone')?></option>
     </select>
     <input type="text" name="keyword" placeholder="搜索内容">
     <input type="submit" value="搜索">
