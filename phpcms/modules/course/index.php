@@ -16,7 +16,7 @@ class index
      */
     public function init()
     {
-        if ($_POST['data']) {
+        if (!empty($_POST['data'])) {
             $data = $_POST['data'];
             $data['addtime'] = time();
             $data['updatetime'] = time();
@@ -42,21 +42,20 @@ class index
      * 搜索结果列表
      */
     public function lists(){
-        if ($_POST['data']) {
+        if (!empty($_POST['data'])) {
             $data = $_POST['data'];
-            if (!empty($data)) {
-                $where = [];
-                foreach ($data as $key => $val) {
-                    if (empty($val)) {
-                        continue;
-                    }
-                    $where[$key] = $val;
+            $where = [];
+            foreach ($data as $key => $val) {
+                if (empty($val)) {
+                    continue;
                 }
-                $where['is_deny'] = 0;
-                $school = $this->db->select($where, '*', 20, 'id DESC');
+                $where[$key] = $val;
             }
+            $where['is_deny'] = 0;
+            $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
+            $school = $this->db->listinfo($where, 'id ASC', $page, 15);
         }
-        include template('course', 'search');
+        include template('course', 'list');
     }
 
 }

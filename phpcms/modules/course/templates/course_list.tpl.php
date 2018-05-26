@@ -60,6 +60,9 @@ if(is_array($data)){
 	}
 }
 ?>
+<tr>
+    <td colspan="12"><?php echo $pages?></td>
+</tr>
 </tbody>
     </table>
   

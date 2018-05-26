@@ -22,7 +22,8 @@ class admin_course extends admin {
 
     public function init(){
         // exportExcel('用户数据');
-        $data = $this->db->select();
+        $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
+        $data = $this->db->listinfo('', 'id ASC', $page, 15);
         foreach ($data as &$row){
             $row['sex'] = $row['sex']==1 ? '男' : '女';
             $row['is_deny'] = empty($row['is_deny']) ? '开启' : '关闭';
