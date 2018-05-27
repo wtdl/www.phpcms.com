@@ -57,6 +57,11 @@ class admin_course extends admin {
     public function listorder(){
         if (!empty($_GET['s'])){
             $data = $_GET;
+
+            if ($_GET['submit']) {
+                $this->delete($_GET);
+            }
+
             unset($data['s'],$data['m'],$data['c'],$data['a'],$data['page']);
             $where="{$data['type']} LIKE '%".trim($data['keyword'])."%'";
             $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
@@ -87,7 +92,7 @@ class admin_course extends admin {
             $data['addtime'] = time();
             $data['updatetime'] = time();
             if ($this->db->insert($data)) {
-                showmessage(L('course_insert_ok'), '?m=course&c=admin_course&a=index&s=1');
+                showmessage(L('course_insert_ok'), '?m=course&c=admin_course&a=index');
             }
             showmessage(L('course_insert_error'), HTTP_REFERER);
         }
@@ -113,16 +118,15 @@ class admin_course extends admin {
     /**
      * 删除
      */
-    public function delete(){
-
-        if (!empty($_POST['aid'])){
-            $data = $_POST['aid'];
+    public function delete($data){
+        if (!empty($data['aid'])){
+            $data = $data['aid'];
             foreach ($data as $key=>$val){
                 $this->db->delete(array('id'=>$val));
             }
-            showmessage(L('course_delete_ok'),'goback');
+            showmessage(L('course_delete_ok'),'?m=course&c=admin_course&a=index');
         }
-        showmessage(L('course_delete_ok'),'goback');
+        showmessage(L('course_delete_error'),'goback');
     }
 
     /**

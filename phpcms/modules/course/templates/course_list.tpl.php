@@ -16,8 +16,8 @@ include $this->admin_tpl('header', 'admin');
     <input type="hidden" name="c" value="admin_course">
     <input type="hidden" name="a" value="listorder">
     <input type="hidden" name="s" value="1">
-    <input type="text" name="keyword" value="<?php echo $_GET['keyword'] ? $_GET['keyword'] : '' ?>" placeholder="搜索内容">
     <input type="hidden" name="pc_hash" value="<?php echo $_GET['pc_hash']?>">
+    <input type="text" name="keyword" value="<?php echo $_GET['keyword'] ? $_GET['keyword'] : '' ?>" placeholder="搜索内容">
     <input type="submit" value="搜索">
 </div>
 <div class="table-list">
