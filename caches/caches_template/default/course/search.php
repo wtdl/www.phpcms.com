@@ -1,6 +1,6 @@
-{template 'content', 'header'}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template('content', 'header'); ?>
 <div class="main">
-    <form method="get" action="{APP_PATH}index.php?m=course&c=index&a=lists">
+    <form method="get" action="<?php echo APP_PATH;?>index.php?m=course&c=index&a=lists">
         <input type="hidden" name="m" value="course">
         <input type="hidden" name="c" value="index">
         <input type="hidden" name="a" value="lists">
@@ -12,6 +12,7 @@
             <input type="submit" value="搜索">
         </p>
     </form>
-    <a href="{APP_PATH}index.php?m=course&c=index">去录入信息</a>
+    <a href="<?php echo APP_PATH;?>index.php?m=course&c=index">去录入信息</a>
+
 </div>
-{template 'content', 'footer'}
+<?php include template('content', 'footer'); ?>

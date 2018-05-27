@@ -57,11 +57,9 @@ class admin_course extends admin {
     public function listorder(){
         if (!empty($_GET['s'])){
             $data = $_GET;
-
             if ($_GET['submit']) {
                 $this->delete($_GET);
             }
-
             unset($data['s'],$data['m'],$data['c'],$data['a'],$data['page']);
             $where="{$data['type']} LIKE '%".trim($data['keyword'])."%'";
             $page = isset($_GET['page']) ? intval($_GET['page']) : 1;

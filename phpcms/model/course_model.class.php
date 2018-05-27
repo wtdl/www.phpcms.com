@@ -1,7 +1,7 @@
 <?php
 /**
- * 深圳福道文化传播公司
- * domain: http://www.fudaojt.com
+ * 深圳网通动力网络技术有限公司
+ * domain: http://www.szwtdl.cn
  * User: pengjian
  * Time: 下午4:25
  */
