@@ -41,4 +41,7 @@ $LANG['load_sub']                       =   '导入Excel';
 $LANG['index']                          =   '首页查看';
 $LANG['ok']                             =   '提交';
 $LANG['clear']                          =   '重置';
+$LANG['user_deny_no']					=	'开启';
+$LANG['user_deny_off']					=	'关闭';
+
 ?>

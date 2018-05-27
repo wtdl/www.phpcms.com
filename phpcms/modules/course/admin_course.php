@@ -19,9 +19,12 @@ class admin_course extends admin {
         $this->db = pc_base::load_model('course_model');
     }
 
-
-    public function init(){
-        // exportExcel('用户数据');
+    /**
+     * 列表
+     * @return [type]
+     */
+    public function index()
+    {
         $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
         $data = $this->db->listinfo('', 'id ASC', $page, 15);
         foreach ($data as &$row){
@@ -31,13 +34,16 @@ class admin_course extends admin {
         include $this->admin_tpl('course_list');
     }
 
+
     /**
      * 配置在线课程
      */
     public function setting(){
         if (!empty($_POST)){
-            if (setcache('course_system',array('course_setting'=>trim($_POST['course_setting'])),'commons')) {
-                showmessage(L('course_update_ok'),'?m=course&c=admin_course&a=init');
+            $setting['course_setting'] = trim($_POST['course_setting']);
+            $setting['course_pages'] = trim($_POST['pages']);
+            if (setcache('course_system',$setting,'commons')) {
+                showmessage(L('course_update_ok'),'?m=course&c=admin_course&a=index');
             }
             showmessage(L('course_update_error'),'goback');
         }
@@ -49,11 +55,21 @@ class admin_course extends admin {
      * 搜索结果列表
      */
     public function listorder(){
-        if (!empty($_POST)){
-            $where = array(
-                $_POST['type'] => trim($_POST['keyword'])
-            );
-            $data = $this->db->select($where);
+        if (!empty($_GET['s'])){
+            $data = $_GET;
+            unset($data['s'],$data['m'],$data['c'],$data['a'],$data['page']);
+            $where="{$data['type']} LIKE '%".trim($data['keyword'])."%'";
+            $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
+            //获取缓存配置信息
+            $pagesize = 15;
+            $limit = ($page-1)*$pagesize.",".$pagesize;
+            $data = $this->db->select($where,'*',$limit);
+            $total = $this->db->count($where);
+            $this->db->pages = pages($total, $page, $pagesize);
+            foreach ($data as &$row){
+                $row['sex'] = $row['sex']==1 ? '男' : '女';
+                $row['is_deny'] = empty($row['is_deny']) ? '开启' : '关闭';
+            }
             include $this->admin_tpl('course_list');
         }else{
             showmessage('非法提交','goback');
@@ -71,7 +87,7 @@ class admin_course extends admin {
             $data['addtime'] = time();
             $data['updatetime'] = time();
             if ($this->db->insert($data)) {
-                showmessage(L('course_insert_ok'), '?m=course&c=admin_course&a=init&s=1');
+                showmessage(L('course_insert_ok'), '?m=course&c=admin_course&a=index&s=1');
             }
             showmessage(L('course_insert_error'), HTTP_REFERER);
         }
@@ -107,13 +123,6 @@ class admin_course extends admin {
             showmessage(L('course_delete_ok'),'goback');
         }
         showmessage(L('course_delete_ok'),'goback');
-    }
-
-    /**
-     * 批量处理
-     */
-    public function public_approval(){
-        __print($_GET);
     }
 
     /**

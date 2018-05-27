@@ -20,6 +20,10 @@ include $this->admin_tpl('header', 'admin');
                     </td>
                 </tr>
                 <tr>
+                    <th width="80">前台每页数量</th>
+                    <td><input type="text" class="input-text" name="pages" value="<?php echo $course_system['course_pages']?>"></td>
+                </tr>
+                <tr>
                     <td colspan="2">
                         <input type="submit" name="dosubmit" id="dosubmit" value=" <?php echo L('ok')?> ">&nbsp;
                         <input type="reset" value=" <?php echo L('clear')?> ">

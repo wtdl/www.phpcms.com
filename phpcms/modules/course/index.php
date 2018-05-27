@@ -3,7 +3,6 @@ defined('IN_PHPCMS') or exit('No permission resources.');
 class index
 {
     private $db;
-
     public function __construct()
     {
         pc_base::load_app_func('global');
@@ -12,7 +11,7 @@ class index
     }
 
     /**
-     * 报名
+     * 提交资料到平台
      */
     public function init()
     {
@@ -31,7 +30,7 @@ class index
 
 
     /**
-     * 搜索成绩
+     * 搜索视图
      */
     public function search()
     {
@@ -42,18 +41,29 @@ class index
      * 搜索结果列表
      */
     public function lists(){
-        if (!empty($_POST['data'])) {
-            $data = $_POST['data'];
-            $where = [];
+        if (!empty($_GET['s'])) {
+            $data = $_GET;
+            //删除多余的参数
+            unset($data['s'],$data['m'],$data['c'],$data['a'],$data['page']);
+            $where = " is_deny=0 ";
+            //组合搜索条件
             foreach ($data as $key => $val) {
                 if (empty($val)) {
                     continue;
                 }
-                $where[$key] = $val;
+                $where .= " AND ".$key.=" LIKE '%".$val."%'";
             }
-            $where['is_deny'] = 0;
             $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
-            $school = $this->db->listinfo($where, 'id ASC', $page, 15);
+            //获取缓存配置信息
+            $setting = getcache('course_system','commons');
+            $pagesize = $setting['course_pages'];
+            $limit = ($page-1)*$pagesize.",".$pagesize;
+            //搜索数据
+            $school = $this->db->select($where,'*',$limit);
+            //统计条数
+            $total = $this->db->count($where);
+            //执行分页效果
+            $pages = pages($total, $page, $pagesize);
         }
         include template('course', 'list');
     }

@@ -3,16 +3,21 @@ defined('IN_ADMIN') or exit('No permission resources.');
 include $this->admin_tpl('header', 'admin');
 ?>
 <div class="pad-lr-10">
-<form name="myform" action="?m=course&c=admin_course&a=listorder" method="post">
+<form name="myform" action="?m=course&c=admin_course&a=listorder" method="get">
 <div class="table-list">
     <select name="type">
-        <option value="nickname"><?php echo L('course_nickname')?></option>
-        <option value="school"><?php echo L('course_school')?></option>
-        <option value="school_number"><?php echo L('course_number')?></option>
-        <option value="card"><?php echo L('course_card')?></option>
-        <option value="phone"><?php echo L('course_phone')?></option>
+        <option value="nickname" <?php echo $_GET['type']=='nickname' ? 'selected = "selected"' : ''?>><?php echo L('course_nickname')?></option>
+        <option value="school" <?php echo $_GET['type']=='school' ? 'selected = "selected"' : ''?>><?php echo L('course_school')?></option>
+        <option value="school_number" <?php echo $_GET['type']=='school_number' ? 'selected = "selected"' : ''?>><?php echo L('course_number')?></option>
+        <option value="card" <?php echo $_GET['type']=='card' ? 'selected = "selected"' : ''?>><?php echo L('course_card')?></option>
+        <option value="phone" <?php echo $_GET['type']=='phone' ? 'selected = "selected"' : ''?>><?php echo L('course_phone')?></option>
     </select>
-    <input type="text" name="keyword" placeholder="搜索内容">
+    <input type="hidden" name="m" value="course">
+    <input type="hidden" name="c" value="admin_course">
+    <input type="hidden" name="a" value="listorder">
+    <input type="hidden" name="s" value="1">
+    <input type="text" name="keyword" value="<?php echo $_GET['keyword'] ? $_GET['keyword'] : '' ?>" placeholder="搜索内容">
+    <input type="hidden" name="pc_hash" value="<?php echo $_GET['pc_hash']?>">
     <input type="submit" value="搜索">
 </div>
 <div class="table-list">
@@ -52,7 +57,7 @@ if(is_array($data)){
     <td align="center"><?php echo date('Y-m-d H:i:s', $course['updatetime'])?></td>
 	<td align="center">
 	<?php if ($_GET['s']==1) {?><a href="?m=course&c=index&aid=<?php echo $course['id']?>" title="<?php echo L('preview')?>"  target="_blank"><?php }?><?php echo L('index')?><?php if ($_GET['s']==1) {?></a><?php }?> |
-	<a href="javascript:edit('<?php echo $course['id']?>', '<?php echo safe_replace($course['nickname'])?>');void(0);"><?php echo L('edit')?></a>
+	<a href="javascript:edit('<?php echo $course['id']?>', '<?php echo safe_replace($course['nickname'])?>');void(0);"><?php echo L('course_edit')?></a>
 
     </td>
 	</tr>
@@ -60,9 +65,6 @@ if(is_array($data)){
 	}
 }
 ?>
-<tr>
-    <td colspan="12"><?php echo $pages?></td>
-</tr>
 </tbody>
     </table>
   

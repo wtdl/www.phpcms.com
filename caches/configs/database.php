@@ -2,7 +2,7 @@
 
 return array (
 	'default' => array (
-		'hostname' => '192.168.1.245',
+		'hostname' => '192.168.1.101',
 		'port' => 3306,
 		'database' => 'www.phpcms.com',
 		'username' => 'root',

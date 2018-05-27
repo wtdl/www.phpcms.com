@@ -1,10 +1,14 @@
 {template 'content', 'header'}
 <div class="main">
     <!--{if empty($school)}-->
-    <form method="post" action="{APP_PATH}index.php?m=course&c=index&a=lists">
-        <p>姓名: <input type="text" name="data[nickname]"> </p>
-        <p>高考报名号: <input type="text" name="data[school_number]"> </p>
-        <p>身份证号码: <input type="text" name="data[card]"> </p>
+    <form method="get" action="{APP_PATH}index.php?m=course&c=index&a=lists">
+        <input type="hidden" name="m" value="course">
+        <input type="hidden" name="c" value="index">
+        <input type="hidden" name="a" value="lists">
+        <input type="hidden" name="s" value="1">
+        <p>姓名: <input type="text" name="nickname"> </p>
+        <p>高考报名号: <input type="text" name="school_number"> </p>
+        <p>身份证号码: <input type="text" name="card"> </p>
         <p>
             <input type="submit" value="保存">
             <input type="reset" value="重置">

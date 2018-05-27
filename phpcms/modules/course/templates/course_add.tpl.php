@@ -44,8 +44,8 @@ include $this->admin_tpl('header', 'admin');
 <tr>
     <th><?php echo L('course_deny')?></th>
     <td>
-        <input type="radio" checked name="course[is_deny]" value="0"> 开启
-        <input type="radio" name="course[is_deny]" value="1"> 关闭
+        <input type="radio" checked name="course[is_deny]" value="0"> <?php echo L('user_deny_no')?>
+        <input type="radio" name="course[is_deny]" value="1"> <?php echo L('user_deny_off')?>
 </tr>
 <tr>
     <td>

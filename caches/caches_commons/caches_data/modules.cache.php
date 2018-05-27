@@ -8,7 +8,7 @@ return array (
     'iscore' => '1',
     'version' => '1.0',
     'description' => '',
-    'setting' => '{"admin_email":"phpcms@phpcms.cn","maxloginfailedtimes":"8","minrefreshtime":"2","mail_type":"1","mail_server":"smtp.qq.com","mail_port":"25","category_ajax":"0","mail_user":"phpcms.cn@foxmail.com","mail_auth":"1","mail_from":"phpcms.cn@foxmail.com","mail_password":"","errorlog_size":"20"}',
+    'setting' => '{"admin_email":"phpcms@phpcms.cn","maxloginfailedtimes":"8","minrefreshtime":"2","mail_type":"1","mail_server":"smtp.qq.com","mail_port":"25","category_ajax":"0","mail_user":"phpcms.cn@foxmail.com","mail_auth":"1","mail_from":"phpcms.cn@foxmail.com","mail_password":"","errorlog_size":"20","course":"2"}',
     'listorder' => '0',
     'disabled' => '0',
     'installdate' => '2010-10-18',
@@ -25,8 +25,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-26',
-    'updatedate' => '2018-05-26',
+    'installdate' => '2018-05-27',
+    'updatedate' => '2018-05-27',
   ),
   'member' => 
   array (
@@ -314,8 +314,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-07',
-    'updatedate' => '2018-05-07',
+    'installdate' => '2018-05-06',
+    'updatedate' => '2018-05-06',
   ),
   'comment' => 
   array (
@@ -328,8 +328,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-07',
-    'updatedate' => '2018-05-07',
+    'installdate' => '2018-05-06',
+    'updatedate' => '2018-05-06',
   ),
   'link' => 
   array (
@@ -400,8 +400,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-07',
-    'updatedate' => '2018-05-07',
+    'installdate' => '2018-05-06',
+    'updatedate' => '2018-05-06',
   ),
   'poster' => 
   array (
@@ -414,8 +414,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-07',
-    'updatedate' => '2018-05-07',
+    'installdate' => '2018-05-06',
+    'updatedate' => '2018-05-06',
   ),
   'formguide' => 
   array (
@@ -447,8 +447,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-07',
-    'updatedate' => '2018-05-07',
+    'installdate' => '2018-05-06',
+    'updatedate' => '2018-05-06',
   ),
   'upgrade' => 
   array (
@@ -475,8 +475,22 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-07',
-    'updatedate' => '2018-05-07',
+    'installdate' => '2018-05-06',
+    'updatedate' => '2018-05-06',
+  ),
+  'sms' => 
+  array (
+    'module' => 'sms',
+    'name' => '短信平台',
+    'url' => 'sms/',
+    'iscore' => '0',
+    'version' => '1.0',
+    'description' => '短信平台',
+    'setting' => '',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '2011-09-02',
+    'updatedate' => '2011-09-02',
   ),
 );
 ?>
