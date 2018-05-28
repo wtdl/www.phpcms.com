@@ -8,9 +8,8 @@ CREATE TABLE IF NOT EXISTS `phpcms_course` (
   `card` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '身份证号码',
   `phone` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '手机号码',
   `parents_phone` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '家长电话',
-  `addtime` int(10) UNSIGNED NOT NULL DEFAULT 0 COMMENT '添加时间',
-  `show_template` char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '状态0开启，1关闭',
   `is_deny` tinyint(2) NULL DEFAULT NULL COMMENT '状态0正常，1关闭',
+  `addtime` int(10) UNSIGNED NOT NULL DEFAULT 0 COMMENT '添加时间',
   `updatetime` int(10) NULL DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
 ) TYPE=MyISAM ;

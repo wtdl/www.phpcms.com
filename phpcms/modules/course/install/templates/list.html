@@ -17,10 +17,11 @@
             <td>{$val['card']}</td>
             <td><!--{if $val['sex']==1}--> 男<!--{else}--><!--{/if}--></td>
             <td>{php echo date('Y-m-d',$val['addtime'])}</td>
+            <td><a href="{APP_PATH}index.php?m=course&c=index&a=detail&id={$val['id']}">&nbsp;&nbsp;详情</a></td>
         </tr>
         <!--{/loop}-->
         <tr>
-        	<td colspan="6">{$pages}</td>
+            <td colspan="6">{$pages}</td>
         </tr>
     </table>
     <a href="{APP_PATH}index.php?m=course&c=index&a=search">去查询</a>

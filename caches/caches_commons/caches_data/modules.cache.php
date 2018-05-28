@@ -25,8 +25,8 @@ return array (
     'setting' => '',
     'listorder' => '0',
     'disabled' => '0',
-    'installdate' => '2018-05-27',
-    'updatedate' => '2018-05-27',
+    'installdate' => '2018-05-28',
+    'updatedate' => '2018-05-28',
   ),
   'member' => 
   array (

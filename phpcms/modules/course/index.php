@@ -68,4 +68,14 @@ class index
         include template('course', 'list');
     }
 
+    public function detail(){
+        if (!empty($_GET['id'])) {
+            $result = $this->db->get_one(array('id'=>trim($_GET['id'])));
+            if (!$result) {
+                showmessage('信息不存在','goback');
+            }
+            include template('course', 'show'); 
+        }
+    }
+
 }

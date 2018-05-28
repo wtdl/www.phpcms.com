@@ -24,6 +24,10 @@ include $this->admin_tpl('header', 'admin');
                     <td><input type="text" class="input-text" name="pages" value="<?php echo $course_system['course_pages']?>"></td>
                 </tr>
                 <tr>
+                    <th width="80">最大导出数量</th>
+                    <td><input type="text" class="input-text" name="course_export_max" value="<?php echo $course_system['course_export_max']?>"></td>
+                </tr>
+                <tr>
                     <td colspan="2">
                         <input type="submit" name="dosubmit" id="dosubmit" value=" <?php echo L('ok')?> ">&nbsp;
                         <input type="reset" value=" <?php echo L('clear')?> ">

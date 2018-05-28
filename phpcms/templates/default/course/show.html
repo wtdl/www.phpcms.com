@@ -1,0 +1,15 @@
+{template 'content', 'header'}
+<div class="main">
+    <p>姓名：{$result['nickname']}</p>
+    <p>性别：{$result['sex']}</p>
+    <p>学校：{$result['school']}</p>
+    <p>高中报名编号：{$result['school_number']}</p>
+    <p>身份证号码：{$result['card']}</p>
+    <p>手机号码：{$result['phone']}</p>
+    <p>家长电话：{$result['parents_phone']}</p>
+    <p>状态0正常，1关闭:：{$result['is_deny']}</p>
+    <p>添加时间：{$result['addtime']}</p>
+    <p>更新时间：{$result['updatetime']}</p>
+    <p><a href="{APP_PATH}index.php?m=course&c=index">去录入信息</a></p>
+</div>
+{template 'content', 'footer'}

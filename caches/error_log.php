@@ -46,3 +46,12 @@
 <?php exit;?>05-27 13:52:18 | 2 | Illegal string offset 'is_deny' | phpcms\modules\course\index.php | 54
 <?php exit;?>05-27 15:48:46 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
 <?php exit;?>05-27 15:48:46 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 22:27:15 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 22:27:15 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 22:27:34 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 22:27:34 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 22:57:57 | 2 | Invalid argument supplied for foreach() | phpcms\modules\course\admin_course.php | 162
+<?php exit;?>05-28 23:19:37 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 23:19:37 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 23:19:52 | 2 | fsockopen(): php_network_getaddresses: getaddrinfo failed: ��֪������������  | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>05-28 23:19:52 | 2 | fsockopen(): unable to connect to juhe.phpcms.cn:80 (php_network_getaddresses: getaddrinfo failed: ��֪������������ ) | phpcms\libs\classes\http.class.php | 84

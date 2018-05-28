@@ -56,7 +56,6 @@ if(is_array($data)){
     <td align="center"><?php echo date('Y-m-d H:i:s', $course['addtime'])?></td>
     <td align="center"><?php echo date('Y-m-d H:i:s', $course['updatetime'])?></td>
 	<td align="center">
-	<?php if ($_GET['s']==1) {?><a href="?m=course&c=index&aid=<?php echo $course['id']?>" title="<?php echo L('preview')?>"  target="_blank"><?php }?><?php echo L('index')?><?php if ($_GET['s']==1) {?></a><?php }?> |
 	<a href="javascript:edit('<?php echo $course['id']?>', '<?php echo safe_replace($course['nickname'])?>');void(0);"><?php echo L('course_edit')?></a>
 
     </td>
@@ -69,8 +68,11 @@ if(is_array($data)){
     </table>
   
     <div class="btn"><label for="check_box"><?php echo L('selected_all')?>/<?php echo L('cancel')?></label>
-        <?php if($_GET['s']==1) {?><input name='submit' type='submit' class="button" value='<?php echo L('cancel_all_selected')?>' onClick="document.myform.action='?m=course&c=admin_course&a=public_approval&passed=0'"><?php } elseif($_GET['s']==2) {?><input name='submit' type='submit' class="button" value='<?php echo L('pass_all_selected')?>' onClick="document.myform.action='?m=course&c=admin_course&a=public_approval&passed=1'"><?php }?>&nbsp;&nbsp;
-		<input name="submit" type="submit" class="button" value="<?php echo L('remove_all_selected')?>" onClick="document.myform.action='?m=course&c=admin_course&a=delete';return confirm('<?php echo L('affirm_delete')?>')">&nbsp;&nbsp;</div>  </div>
+        &nbsp;&nbsp;
+		<input name="submit" type="submit" class="button" value="<?php echo L('remove_all_selected')?>" onClick="document.myform.action='?m=course&c=admin_course&a=delete';return confirm('<?php echo L('affirm_delete')?>')">&nbsp;&nbsp;
+        <input type="submit" name="export" class="button" value="导出Excel" onClick="document.myform.action='?m=course&c=admin_course&a=export';return confirm('<?php echo L('导出每页数据')?>')">
+        <input type="hidden" name="page" value="<?php echo $_GET['page']?>">
+        </div>  </div>
  <div id="pages"><?php echo $this->db->pages;?></div>
 </form>
 </div>
